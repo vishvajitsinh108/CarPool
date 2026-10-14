@@ -4,15 +4,25 @@ workflows:
     max_build_duration: 60
     environment:
       flutter: stable
-      xcode: latest
     scripts:
+      - name: Setup Flutter project structure
+        script: |
+          # amari files backup
+          cp pubspec.yaml /tmp/pubspec.yaml
+          cp lib/main.dart /tmp/main.dart
+          
+          # Flutter project structure banavo (android/ folder etc)
+          flutter create --project-name carpool_tracker . --platforms android
+          
+          # amari files restore
+          cp /tmp/pubspec.yaml pubspec.yaml
+          cp /tmp/main.dart lib/main.dart
+          
       - name: Get packages
         script: flutter pub get
+        
       - name: Build APK
         script: flutter build apk --release
+        
     artifacts:
       - build/app/outputs/flutter-apk/app-release.apk
-    publishing:
-      email:
-        recipients:
-          - vishvajitsinhgohil0@gmail.com  # તમારું email અહીં લખો
