@@ -17,87 +17,53 @@ import 'package:path/path.dart' as path;
 class L10n {
   static final Map<String, Map<String, String>> t = {
     'en': {
-      'appTitle': 'My Carpool Diary',
-      'dashboard': 'Dashboard', 'addTrip': 'Add Trip',
-      'settlement': 'Settlement', 'members': 'Members',
-      'totalStatus': 'Total Status', 'totalKm': 'Total Distance',
-      'totalFuel': 'Total Fuel', 'avgMileage': 'Average Mileage',
-      'totalCost': 'Total Cost', 'addNewTrip': 'Add New Trip',
-      'totalKmLabel': 'Total Distance (km)', 'fuelType': 'Fuel Type',
-      'fuelQty': 'Fuel Quantity (L/units)',
-      'fuelPrice': 'Price (per L/unit)',
-      'whoWasPresent': 'Who was present today?',
-      'saveTrip': 'Save Trip',
-      'weeklySettlement': 'Weekly Settlement',
-      'eachPassengerPays': '(Each passenger pays to owner)',
-      'backup': 'Backup', 'restore': 'Restore',
-      'addMember': 'Add Member', 'memberName': 'Name',
-      'mobileNumber': 'Mobile Number', 'profilePhoto': 'Profile Photo',
-      'selectAvatar': 'Select Avatar',
-      'chooseFromGallery': 'Choose from Gallery',
-      'save': 'Save', 'cancel': 'Cancel',
-      'tripSaved': 'Trip saved successfully!',
-      'backupReady': 'Backup is ready!',
-      'backupRestored': 'Backup restored successfully!',
-      'petrol': 'Petrol', 'diesel': 'Diesel',
-      'cng': 'CNG', 'electric': 'Electric',
-      'noMembers': 'No members yet. Add members first!',
+      'appTitle': 'My Carpool Diary', 'dashboard': 'Dashboard', 'addTrip': 'Add Trip',
+      'settlement': 'Settlement', 'members': 'Members', 'totalStatus': 'Total Status',
+      'totalKm': 'Total Distance', 'totalFuel': 'Total Fuel', 'avgMileage': 'Average Mileage',
+      'totalCost': 'Total Cost', 'addNewTrip': 'Add New Trip', 'totalKmLabel': 'Total Distance (km)',
+      'fuelType': 'Fuel Type', 'fuelQty': 'Fuel Quantity (L/units)', 'fuelPrice': 'Price (per L/unit)',
+      'whoWasPresent': 'Who was present today?', 'saveTrip': 'Save Trip',
+      'weeklySettlement': 'Weekly Settlement', 'eachPassengerPays': '(Each passenger pays to owner)',
+      'backup': 'Backup', 'restore': 'Restore', 'addMember': 'Add Member', 'memberName': 'Name',
+      'mobileNumber': 'Mobile Number', 'profilePhoto': 'Profile Photo', 'selectAvatar': 'Select Avatar',
+      'chooseFromGallery': 'Choose from Gallery', 'save': 'Save', 'cancel': 'Cancel',
+      'tripSaved': 'Trip saved successfully!', 'backupReady': 'Backup is ready!',
+      'backupRestored': 'Backup restored successfully!', 'petrol': 'Petrol', 'diesel': 'Diesel',
+      'cng': 'CNG', 'electric': 'Electric', 'noMembers': 'No members yet. Add members first!',
       'owner': 'Owner (You)',
     },
     'gu': {
-      'appTitle': 'મારી કારપુલ ડાયરી',
-      'dashboard': 'ડેશબોર્ડ', 'addTrip': 'ટ્રિપ ઉમેરો',
-      'settlement': 'હિસાબ', 'members': 'સભ્યો',
-      'totalStatus': 'કુલ સ્ટેટસ', 'totalKm': 'કુલ કિમી ચાલ્યું',
-      'totalFuel': 'કુલ ફ્યુઅલ વપરાશ', 'avgMileage': 'એવરેજ મઈલેજ',
-      'totalCost': 'કુલ ખર્ચ', 'addNewTrip': 'નવી ટ્રિપ ઉમેરો',
-      'totalKmLabel': 'કુલ કિમી (km)', 'fuelType': 'ફ્યુઅલનો પ્રકાર',
-      'fuelQty': 'ફ્યુઅલ જથ્થો (લીટર/યુનિટ)',
-      'fuelPrice': 'ભાવ (પ્રતિ લીટર/યુનિટ)',
-      'whoWasPresent': 'આજે કોણ હાજર હતું?',
-      'saveTrip': 'ટ્રિપ સેવ કરો',
-      'weeklySettlement': 'આ અઠવાડિયાનો હિસાબ',
-      'eachPassengerPays': '(દરેક પેસેન્જર માલિકને કેટલા આપશે)',
-      'backup': 'બેકઅપ લો', 'restore': 'બેકઅપ રીસ્ટોર કરો',
-      'addMember': 'સભ્ય ઉમેરો', 'memberName': 'નામ',
-      'mobileNumber': 'મોબાઈલ નંબર', 'profilePhoto': 'પ્રોફાઈલ ફોટો',
-      'selectAvatar': 'અવતાર પસંદ કરો',
-      'chooseFromGallery': 'ગેલેરીમાંથી પસંદ કરો',
-      'save': 'સેવ કરો', 'cancel': 'રદ કરો',
-      'tripSaved': 'ટ્રિપ સફળતાપૂર્વક ઉમેરાઈ!',
-      'backupReady': 'બેકઅપ તૈયાર છે!',
-      'backupRestored': 'બેકઅપ રીસ્ટોર થઈ ગયો!',
-      'petrol': 'પેટ્રોલ', 'diesel': 'ડીઝલ',
-      'cng': 'સીએનજી', 'electric': 'ઇલેક્ટ્રિક',
-      'noMembers': 'કોઈ સભ્ય નથી. પહેલાં સભ્યો ઉમેરો!',
+      'appTitle': 'મારી કારપુલ ડાયરી', 'dashboard': 'ડેશબોર્ડ', 'addTrip': 'ટ્રિપ ઉમેરો',
+      'settlement': 'હિસાબ', 'members': 'સભ્યો', 'totalStatus': 'કુલ સ્ટેટસ',
+      'totalKm': 'કુલ કિમી ચાલ્યું', 'totalFuel': 'કુલ ફ્યુઅલ વપરાશ', 'avgMileage': 'એવરેજ મઈલેજ',
+      'totalCost': 'કુલ ખર્ચ', 'addNewTrip': 'નવી ટ્રિપ ઉમેરો', 'totalKmLabel': 'કુલ કિમી (km)',
+      'fuelType': 'ફ્યુઅલનો પ્રકાર', 'fuelQty': 'ફ્યુઅલ જથ્થો (લીટર/યુનિટ)',
+      'fuelPrice': 'ભાવ (પ્રતિ લીટર/યુનિટ)', 'whoWasPresent': 'આજે કોણ હાજર હતું?',
+      'saveTrip': 'ટ્રિપ સેવ કરો', 'weeklySettlement': 'આ અઠવાડિયાનો હિસાબ',
+      'eachPassengerPays': '(દરેક પેસેન્જર માલિકને કેટલા આપશે)', 'backup': 'બેકઅપ લો',
+      'restore': 'બેકઅપ રીસ્ટોર કરો', 'addMember': 'સભ્ય ઉમેરો', 'memberName': 'નામ',
+      'mobileNumber': 'મોબાઈલ નંબર', 'profilePhoto': 'પ્રોફાઈલ ફોટો', 'selectAvatar': 'અવતાર પસંદ કરો',
+      'chooseFromGallery': 'ગેલેરીમાંથી પસંદ કરો', 'save': 'સેવ કરો', 'cancel': 'રદ કરો',
+      'tripSaved': 'ટ્રિપ સફળતાપૂર્વક ઉમેરાઈ!', 'backupReady': 'બેકઅપ તૈયાર છે!',
+      'backupRestored': 'બેકઅપ રીસ્ટોર થઈ ગયો!', 'petrol': 'પેટ્રોલ', 'diesel': 'ડીઝલ',
+      'cng': 'સીએનજી', 'electric': 'ઇલેક્ટ્રિક', 'noMembers': 'કોઈ સભ્ય નથી. પહેલાં સભ્યો ઉમેરો!',
       'owner': 'માલિક (તમે)',
     },
     'hi': {
-      'appTitle': 'मेरी कारपूल डायरी',
-      'dashboard': 'डैशबोर्ड', 'addTrip': 'ट्रिप जोड़ें',
-      'settlement': 'हिसाब', 'members': 'सदस्य',
-      'totalStatus': 'कुल स्थिति', 'totalKm': 'कुल किलोमीटर',
-      'totalFuel': 'कुल ईंधन', 'avgMileage': 'औसत माइलेज',
-      'totalCost': 'कुल खर्च', 'addNewTrip': 'नई ट्रिप जोड़ें',
-      'totalKmLabel': 'कुल किलोमीटर (km)', 'fuelType': 'ईंधन का प्रकार',
-      'fuelQty': 'ईंधन मात्रा (लीटर/यूनिट)',
-      'fuelPrice': 'कीमत (प्रति लीटर/यूनिट)',
-      'whoWasPresent': 'आज कौन उपस्थित था?',
-      'saveTrip': 'ट्रिप सेव करें',
-      'weeklySettlement': 'इस सप्ताह का हिसाब',
-      'eachPassengerPays': '(प्रत्येक यात्री मालिक को कितने देगा)',
-      'backup': 'बैकअप लो', 'restore': 'बैकअप रिस्टोर करें',
-      'addMember': 'सदस्य जोड़ें', 'memberName': 'नाम',
-      'mobileNumber': 'मोबाइल नंबर', 'profilePhoto': 'प्रोफाइल फोटो',
-      'selectAvatar': 'अवतार चुनें',
-      'chooseFromGallery': 'गैलरी से चुनें',
-      'save': 'सेव करें', 'cancel': 'रद्द करें',
-      'tripSaved': 'ट्रिप सफलतापूर्वक सेव हुई!',
-      'backupReady': 'बैकअप तैयार है!',
-      'backupRestored': 'बैकअप रिस्टोर हो गया!',
-      'petrol': 'पेट्रोल', 'diesel': 'डीज़ल',
-      'cng': 'सीएनजी', 'electric': 'इलेक्ट्रिक',
-      'noMembers': 'कोई सदस्य नहीं। पहले सदस्य जोड़ें!',
+      'appTitle': 'मेरी कारपूल डायरी', 'dashboard': 'डैशबोर्ड', 'addTrip': 'ट्रिप जोड़ें',
+      'settlement': 'हिसाब', 'members': 'सदस्य', 'totalStatus': 'कुल स्थिति',
+      'totalKm': 'कुल किलोमीटर', 'totalFuel': 'कुल ईंधन', 'avgMileage': 'औसत माइलेज',
+      'totalCost': 'कुल खर्च', 'addNewTrip': 'नई ट्रिप जोड़ें', 'totalKmLabel': 'कुल किलोमीटर (km)',
+      'fuelType': 'ईंधन का प्रकार', 'fuelQty': 'ईंधन मात्रा (लीटर/यूनिट)',
+      'fuelPrice': 'कीमत (प्रति लीटर/यूनिट)', 'whoWasPresent': 'आज कौन उपस्थित था?',
+      'saveTrip': 'ट्रिप सेव करें', 'weeklySettlement': 'इस सप्ताह का हिसाब',
+      'eachPassengerPays': '(प्रत्येक यात्री मालिक को कितने देगा)', 'backup': 'बैकअप लो',
+      'restore': 'बैकअप रिस्टोर करें', 'addMember': 'सदस्य जोड़ें', 'memberName': 'नाम',
+      'mobileNumber': 'मोबाइल नंबर', 'profilePhoto': 'प्रोफाइल फोटो', 'selectAvatar': 'अवतार चुनें',
+      'chooseFromGallery': 'गैलरी से चुनें', 'save': 'सेव करें', 'cancel': 'रद्द करें',
+      'tripSaved': 'ट्रिप सफलतापूर्वक सेव हुई!', 'backupReady': 'बैकअप तैयार है!',
+      'backupRestored': 'बैकअप रिस्टोर हो गया!', 'petrol': 'पेट्रोल', 'diesel': 'डीज़ल',
+      'cng': 'सीएनजी', 'electric': 'इलेक्ट्रिक', 'noMembers': 'कोई सदस्य नहीं। पहले सदस्य जोड़ें!',
       'owner': 'मालिक (आप)',
     },
   };
@@ -107,7 +73,7 @@ class L10n {
   }
 }
 
-// ============ MODELS ============
+// ============ MODELS (No Adapters needed, using JSON) ============
 class Member {
   String id;
   String name;
@@ -115,24 +81,10 @@ class Member {
   String? photoPath;
   int? avatarIcon;
   Member({required this.id, required this.name, required this.mobile, this.photoPath, this.avatarIcon});
+  
   Map<String, dynamic> toJson() => {'id': id, 'name': name, 'mobile': mobile, 'photoPath': photoPath, 'avatarIcon': avatarIcon};
-  factory Member.fromJson(Map<String, dynamic> j) => Member(id: j['id'], name: j['name'], mobile: j['mobile'], photoPath: j['photoPath'], avatarIcon: j['avatarIcon']);
-}
-
-class MemberAdapter extends TypeAdapter<Member> {
-  @override
-  final int typeId = 1;
-  @override
-  Member read(BinaryReader r) {
-    final n = r.readByteCount();
-    final f = <int, dynamic>{for (int i = 0; i < n; i++) r.readByte(): r.read()};
-    return Member(id: f[0], name: f[1], mobile: f[2], photoPath: f[3], avatarIcon: f[4]);
-  }
-  @override
-  void write(BinaryWriter w, Member o) {
-    w.writeByteCount(5);
-    w..writeByte(0)..write(o.id)..writeByte(1)..write(o.name)..writeByte(2)..write(o.mobile)..writeByte(3)..write(o.photoPath)..writeByte(4)..write(o.avatarIcon);
-  }
+  factory Member.fromJson(Map<String, dynamic> j) => Member(
+    id: j['id'], name: j['name'], mobile: j['mobile'], photoPath: j['photoPath'], avatarIcon: j['avatarIcon']);
 }
 
 class Trip {
@@ -143,35 +95,21 @@ class Trip {
   String fuelType;
   List<String> passengerIds;
   Trip({required this.date, required this.distanceKm, required this.fuelQty, required this.fuelPrice, required this.fuelType, required this.passengerIds});
+  
   double get totalCost => fuelQty * fuelPrice;
   Map<String, dynamic> toJson() => {'date': date.toIso8601String(), 'distanceKm': distanceKm, 'fuelQty': fuelQty, 'fuelPrice': fuelPrice, 'fuelType': fuelType, 'passengerIds': passengerIds};
-  factory Trip.fromJson(Map<String, dynamic> j) => Trip(date: DateTime.parse(j['date']), distanceKm: j['distanceKm'], fuelQty: j['fuelQty'], fuelPrice: j['fuelPrice'], fuelType: j['fuelType'], passengerIds: List<String>.from(j['passengerIds']));
-}
-
-class TripAdapter extends TypeAdapter<Trip> {
-  @override
-  final int typeId = 0;
-  @override
-  Trip read(BinaryReader r) {
-    final n = r.readByteCount();
-    final f = <int, dynamic>{for (int i = 0; i < n; i++) r.readByte(): r.read()};
-    return Trip(date: f[0], distanceKm: f[1], fuelQty: f[2], fuelPrice: f[3], fuelType: f[4], passengerIds: List<String>.from(f[5]));
-  }
-  @override
-  void write(BinaryWriter w, Trip o) {
-    w.writeByteCount(6);
-    w..writeByte(0)..write(o.date)..writeByte(1)..write(o.distanceKm)..writeByte(2)..write(o.fuelQty)..writeByte(3)..write(o.fuelPrice)..writeByte(4)..write(o.fuelType)..writeByte(5)..write(o.passengerIds);
-  }
+  factory Trip.fromJson(Map<String, dynamic> j) => Trip(
+    date: DateTime.parse(j['date']), distanceKm: j['distanceKm'], fuelQty: j['fuelQty'], 
+    fuelPrice: j['fuelPrice'], fuelType: j['fuelType'], passengerIds: List<String>.from(j['passengerIds']));
 }
 
 // ============ MAIN ============
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Hive.initFlutter();
-  Hive.registerAdapter(TripAdapter());
-  Hive.registerAdapter(MemberAdapter());
-  await Hive.openBox<Trip>('trips');
-  await Hive.openBox<Member>('members');
+  // No registerAdapter needed! Hive handles Maps natively.
+  await Hive.openBox('trips');
+  await Hive.openBox('members');
   runApp(const CarPoolApp());
 }
 
@@ -192,9 +130,7 @@ class _CarPoolAppState extends State<CarPoolApp> {
       locale: _locale,
       supportedLocales: const [Locale('en'), Locale('gu'), Locale('hi')],
       localizationsDelegates: const [
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
+        GlobalMaterialLocalizations.delegate, GlobalWidgetsLocalizations.delegate, GlobalCupertinoLocalizations.delegate,
       ],
       theme: ThemeData(primarySwatch: Colors.deepPurple, useMaterial3: true),
       home: HomePage(setLocale: setLocale),
@@ -211,8 +147,8 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage> {
   int _idx = 0;
-  Box<Trip> get tb => Hive.box<Trip>('trips');
-  Box<Member> get mb => Hive.box<Member>('members');
+  Box get tb => Hive.box('trips');
+  Box get mb => Hive.box('members');
 
   @override
   Widget build(BuildContext context) {
@@ -259,7 +195,7 @@ class _HomePageState extends State<HomePage> {
 
   // ========== DASHBOARD ==========
   Widget _dashboard() {
-    final trips = tb.values.toList();
+    final trips = tb.values.map((e) => Trip.fromJson(e)).toList();
     final tk = trips.fold(0.0, (s, t) => s + t.distanceKm);
     final tf = trips.fold(0.0, (s, t) => s + t.fuelQty);
     final tc = trips.fold(0.0, (s, t) => s + t.totalCost);
@@ -285,7 +221,7 @@ class _HomePageState extends State<HomePage> {
 
   // ========== ADD TRIP ==========
   Widget _addTrip() {
-    final members = mb.values.toList();
+    final members = mb.values.map((e) => Member.fromJson(e)).toList();
     if (members.isEmpty) {
       return Center(child: Padding(padding: const EdgeInsets.all(20), child: Text(L10n.tr(context, 'noMembers'), textAlign: TextAlign.center, style: const TextStyle(fontSize: 18))));
     }
@@ -320,14 +256,12 @@ class _HomePageState extends State<HomePage> {
       const SizedBox(height: 20),
       SizedBox(width: double.infinity, child: ElevatedButton.icon(
         onPressed: () async {
-          await tb.add(Trip(
-            date: DateTime.now(),
-            distanceKm: double.tryParse(kmC.text) ?? 0,
-            fuelQty: double.tryParse(fqC.text) ?? 0,
-            fuelPrice: double.tryParse(fpC.text) ?? 0,
-            fuelType: selFuel,
-            passengerIds: selPax,
-          ));
+          final newTrip = Trip(
+            date: DateTime.now(), distanceKm: double.tryParse(kmC.text) ?? 0,
+            fuelQty: double.tryParse(fqC.text) ?? 0, fuelPrice: double.tryParse(fpC.text) ?? 0,
+            fuelType: selFuel, passengerIds: selPax,
+          );
+          await tb.add(newTrip.toJson());
           ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(L10n.tr(context, 'tripSaved'))));
           setState(() => _idx = 0);
         },
@@ -339,8 +273,8 @@ class _HomePageState extends State<HomePage> {
 
   // ========== SETTLEMENT ==========
   Widget _settlement() {
-    final trips = tb.values.toList();
-    final members = mb.values.toList();
+    final trips = tb.values.map((e) => Trip.fromJson(e)).toList();
+    final members = mb.values.map((e) => Member.fromJson(e)).toList();
     Map<String, double> dues = {for (var m in members) m.id: 0.0};
     for (var t in trips) {
       final share = t.totalCost / (t.passengerIds.length + 1);
@@ -372,7 +306,7 @@ class _HomePageState extends State<HomePage> {
 
   // ========== MEMBERS ==========
   Widget _members() {
-    final members = mb.values.toList();
+    final members = mb.values.map((e) => Member.fromJson(e)).toList();
     return Padding(padding: const EdgeInsets.all(16), child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
       Row(mainAxisAlignment: MainAxisAlignment.spaceBetween, children: [
         Text(L10n.tr(context, 'members'), style: const TextStyle(fontSize: 24, fontWeight: FontWeight.bold)),
@@ -388,7 +322,9 @@ class _HomePageState extends State<HomePage> {
             title: Text(m.name, style: const TextStyle(fontWeight: FontWeight.bold)),
             subtitle: Text(m.mobile),
             trailing: IconButton(icon: const Icon(Icons.delete, color: Colors.red), onPressed: () async {
-              await mb.delete(m.id);
+              // Find the key and delete
+              final keys = mb.keys.toList();
+              await mb.delete(keys[i]);
               setState(() {});
             }),
           ));
@@ -447,10 +383,11 @@ class _HomePageState extends State<HomePage> {
         TextButton(onPressed: () => Navigator.pop(ctx), child: Text(L10n.tr(ctx, 'cancel'))),
         ElevatedButton(onPressed: () async {
           if (nameC.text.isNotEmpty) {
-            await mb.put(DateTime.now().millisecondsSinceEpoch.toString(), Member(
+            final newMember = Member(
               id: DateTime.now().millisecondsSinceEpoch.toString(),
               name: nameC.text, mobile: mobC.text, photoPath: photo, avatarIcon: av,
-            ));
+            );
+            await mb.add(newMember.toJson());
             Navigator.pop(ctx);
             setState(() {});
           }
@@ -463,8 +400,8 @@ class _HomePageState extends State<HomePage> {
   Future<void> _export() async {
     try {
       final data = {
-        'trips': tb.values.map((t) => t.toJson()).toList(),
-        'members': mb.values.map((m) => m.toJson()).toList(),
+        'trips': tb.values.toList(), // Already Maps
+        'members': mb.values.toList(), // Already Maps
       };
       final dir = await getApplicationDocumentsDirectory();
       final f = File('${dir.path}/carpool_${DateTime.now().millisecondsSinceEpoch}.json');
@@ -484,8 +421,8 @@ class _HomePageState extends State<HomePage> {
         final d = jsonDecode(s);
         await tb.clear();
         await mb.clear();
-        for (var t in d['trips']) await tb.add(Trip.fromJson(t));
-        for (var m in d['members']) await mb.put(m['id'], Member.fromJson(m));
+        for (var t in d['trips']) await tb.add(t);
+        for (var m in d['members']) await mb.add(m);
         setState(() {});
         ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(L10n.tr(context, 'backupRestored'))));
       }
@@ -545,10 +482,10 @@ class _HomePageState extends State<HomePage> {
   }
 }
 
-// Helper extension
-extension MapEntries<K, V> on Map<K, V> {
+// Helper extension for avatar icons
+extension MapEntries<K, V> on Iterable<V> {
   Iterable<MapEntry<int, V>> asMap() sync* {
     int i = 0;
-    for (final v in values) yield MapEntry(i++, v);
+    for (final v in this) yield MapEntry(i++, v);
   }
 }
